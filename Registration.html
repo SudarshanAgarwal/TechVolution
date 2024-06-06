@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVolution 2024 - Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+
+        .modal {
+         z-index: 1050;
+        }
+
+        .footer {
+        margin-top: auto;
+        background-color: #343a40;
+        color: #fff;
+        padding: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="Home.html">TechVolution 2024</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="features.html">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="testimonials.html">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="timeline.html">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Registration.html">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prizes.html">Prizes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">TechVolution 2024 - Registration Form</h1>
+    <form id="myForm" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+            <div class="invalid-feedback">Name is required.</div>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" class="form-control" id="dob" name="dob" required>
+            <div class="invalid-feedback">Date of Birth is required.</div>
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="male" name="gender" value="male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="female" name="gender" value="female" required>
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="nonbinary" name="gender" value="nonbinary" required>
+                    <label class="form-check-label" for="nonbinary">Non-binary</label>
+                </div>
+                <div class="invalid-feedback d-block">Please select a gender.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" class="form-control" id="phone" name="phone" required>
+            <div class="invalid-feedback">Please enter a valid phone number.</div>
+        </div>
+        <div class="form-group">
+            <label for="street">Street Address:</label>
+            <input type="text" class="form-control" id="street" name="street" required>
+            <div class="invalid-feedback">Street Address is required.</div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="city">City:</label>
+                <input type="text" class="form-control" id="city" name="city" required>
+                <div class="invalid-feedback">City is required.</div>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="state">State:</label>
+                <select class="form-control" id="state" name="state" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CT">Chhattisgarh</option>
+                    <option value="GA">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Odisha</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TS">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UK">Uttarakhand</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="WB">West Bengal</option>
+                    <option value="AN">Andaman and Nicobar Islands</option>
+                    <option value="CH">Chandigarh</option>
+                    <option value="DN">Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option value="DL">Delhi</option>
+                    <option value="LD">Lakshadweep</option>
+                    <option value="PY">Puducherry</option>
+
+                </select>
+                <div class="invalid-feedback">Please select a state.</div>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="zip">Zip Code:</label>
+                <input type="text" class="form-control" id="zip" name="zip" required>
+                <div class="invalid-feedback">Zip Code is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="event">Event Preferences:</label>
+            <select class="form-control" id="event" name="event">
+                <option value="workshop">Workshop</option>
+                <option value="conference">Conference</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="diet">Dietary Restrictions:</label>
+            <textarea class="form-control" id="diet" name="diet" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="tshirt">T-shirt Size:</label>
+            <select class="form-control" id="tshirt" name="tshirt">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">X-Large</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary" onclick="resetForm()">Reset</button>
+        <br><br>
+    </form>
+
+    <div id="confirmationModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registration Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for registering!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer mt-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Contact Information</h5>
+                <!-- Add contact information -->
+            </div>
+            <div class="col-md-6">
+                <h5>Social Media</h5>
+                <!-- Add social media links -->
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 TechVolution. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById("myForm");
+        const modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+        const modalCloseButton = document.querySelector("#confirmationModal .close");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            if (validateForm()) {
+                modal.show();
+                const formData = new FormData(form);
+                // Here we can send the formData to the server using AJAX or perform any other processing
+            }
+        });
+
+        function validateForm() {
+            let isValid = true;
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+                form.classList.add('was-validated');
+                return false;
+            }
+            return isValid;
+        }
+
+        modalCloseButton.onclick = function() {
+            modal.hide();
+        }
+    });
+    function resetForm() {
+    document.getElementById("myForm").reset();
+    }
+</script>
+
+</body>
+</html>
